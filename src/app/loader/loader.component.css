@@ -1,0 +1,34 @@
+.spinner > div {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background-color: #282828;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+.spinner {
+	display: inline-block;
+}
+
+.spinner > div:first-child {
+  animation: bounce 700ms infinite ;
+}
+
+.spinner > div:nth-child(2) {
+  animation: bounce 900ms infinite ;
+}
+
+.spinner > div:last-child {
+  animation: bounce 1100ms infinite ;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(2px);
+    opacity: 1;
+  }
+}

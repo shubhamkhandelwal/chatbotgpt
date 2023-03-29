@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+}
+.chat {
+  margin-top: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  min-height: 4rem;
+  border-radius: 3rem;
+  background-color: white;
+  font-size: 16px;
+  width: fit-content;
+  font-size: 16px;
+  animation: bounceIn 200ms;
+}
+
+.left {
+  border-bottom-left-radius: 0;
+  background: #d9fffe;
+}
+
+.right {
+  border-bottom-right-radius: 0;
+  float: right;
+  background: #0e83884d;
+}
+
+@keyframes bounceIn {
+	from {
+	
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}

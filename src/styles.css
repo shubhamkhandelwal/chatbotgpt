@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+	--bg-color: #2C3333;
+	--secondary-color:#2E4F4F;
+	--header-color: #0E8388;
+	--light-bg-color: #CBE4DE;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--bg-color);
+	height: 100%;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+input {
+	font-family: 'Poppins', sans-serif;
+
+}
+
+::-webkit-scrollbar {
+	position: relative;
+	width: 10px;
+	height: 3rem;
+  }
+
+  /* Track */
+::-webkit-scrollbar-track {
+	background: #2e4f4f38;
+	margin-right: 0.1rem;
+	border-radius: 100vw;
+	margin-block: 0.5rem;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+	background: #2e4f4fa5;
+	border-radius: 100vw;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+	background:  #2e4f4fd4; 
+  }
+  
