@@ -8,8 +8,7 @@ import { Chat } from './chat';
   providedIn: 'root',
 })
 export class ChatService {
-  private OPENAI_API_KEY =
-    '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';
+  private OPENAI_API_KEY = '';
   private configuration: Configuration | null = null;
   private openAPI: OpenAIApi | null = null;
 
