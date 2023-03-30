@@ -25,7 +25,6 @@ export class AppComponent implements OnInit {
     }
     this.chatService.addChat(chat);
     this.chatService.searchQuery(this.inputQuery).then(response => {
-      console.log(response);
       this.chatLoading = false;
     }).catch(error => {
       console.error(error)
@@ -40,6 +39,6 @@ export class AppComponent implements OnInit {
 
   clearChat(): void {
     this.chatService.clearChat();
-    this.chats = [];
+    this.chats = this.chatService.getChats();
   }
 }
