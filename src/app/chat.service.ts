@@ -3,12 +3,13 @@ import { Injectable } from '@angular/core';
 import { Configuration } from 'openai';
 import { CreateChatCompletionResponse, OpenAIApi } from 'openai/dist/api';
 import { Chat } from './chat';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ChatService {
-  private OPENAI_API_KEY = process.env['API_KEY'];
+  private OPENAI_API_KEY = environment.API_KEY;
   private configuration: Configuration | null = null;
   private openAPI: OpenAIApi | null = null;
 
